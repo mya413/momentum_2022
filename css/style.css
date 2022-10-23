@@ -1,0 +1,101 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    animation: fadeIn 0.5s;
+    object-fit:cover;
+}
+
+.box{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:100%;
+    text-align: center;
+    color: #fff;
+}
+
+#clock{
+    margin:0;
+    font-size: 100px;
+}
+
+#greeting{
+    margin: 0;
+    font-size:50px;
+}
+
+#toDoForm input{
+    width:500px;
+    border: none;
+    border-bottom: 10px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 40px;
+    margin-top:40px;
+    text-align: center;
+}
+
+#toDoForm input:focus{
+    outline: none;
+}
+
+#toDoList{
+    position:absolute;
+    top:0;
+    left:0;
+    text-align: left;
+    font-size: 24px;
+}
+
+#toDoList button{
+    margin-left:10px;
+}
+
+.voca{
+    margin-top: 50px;
+}
+
+.voca h3{
+    margin: 0 ;
+    padding:10px 0;
+    font-size:24px
+}
+
+#word{
+    font-size:18px;
+}
+
+#weather{
+    position:absolute;
+    right:0;
+    top:-60%;
+    padding: 20px;
+    font-size: 24px;
+    font-weight:600;
+}
